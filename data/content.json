@@ -6,7 +6,7 @@
     "subheading": "Artisan breads, European pastries, and specialty coffee — all made from scratch daily at our North Hollywood bakery.",
     "ctaText": "See What's Fresh",
     "ctaLink": "#bakery",
-    "backgroundImage": "/images/hero-bg.jpg"
+    "backgroundImage": "https://places.googleapis.com/v1/places/ChIJ12kO7XiWwoAREqtqGVVLBRc/photos/ATCDNfV3WX4VE-b-T_5QFix_Pj6UroVww1Ny9Lm_V3Y04ZbccODjcz3UsIWs0rpA_yXBIwYT5NPpbFs34VOm3yDxeDIWzuteDqbf1ccgT2rMNTv5Ug_zvDFQPTEkdM5SMjR9P_0lUxIFeREBADbmzlGT9l-wMzjezrpuNDeTDkvAgLjyrSX7amWpfGSLuWTA-Um7tYn58pYKNmE5gwx4-RDtRcv3PdmxYpsMNfVOM_nT0FRMfBD479u1OT7Csb4gb6rXjFEodO2HQHYaWmfc_2vtIXwhhm_sC5UG8077CvydLgw4E-SJhiAUR-bOqGK6xiD8M6w2oJDFnMzF6BVgHlwrM7ZTkxh10LH61XvaEm-xFoldUEbK9fqK6Be45frQSJAW3xiW8pWYmU4GRvKUglA-Yq7xcDuVHNOF42nS2263mrhXMmXq/media?maxWidthPx=1200&key=AIzaSyCrMkpaVV1d0GDQZTXjwOs9mzdwRGs2aro"
   },
   "about": {
     "heading": "Our Story",
@@ -95,5 +95,34 @@
     "primaryColor": "#fef3c7",
     "accentColor": "#92400e",
     "fontFamily": "elegant"
+  },
+  "gallery": {
+    "heading": "Gallery",
+    "images": [
+      {
+        "src": "https://places.googleapis.com/v1/places/ChIJ12kO7XiWwoAREqtqGVVLBRc/photos/ATCDNfXK9kuoCpMOtoesD5SZSZ9CKuGrP0RFpm45_WRDSy7fCBpKUx68fFnZdHBnOFox375EDn9b09ewVSL5p5XAxkSPAt8R4oOVbSDj1ZtywwivHCBVUkm2PmHUKA8MtuVTwbStkcN9lOx-dIcqC86ksvaZEoj83PF5krlXFZ_KfSpKLPLuRt2IZcZdIA1LlNEGsj7ykPp0-d0B83L-wL7nYwqTtnFo8pjJE1rGoYGNg1-37uhMOKnZz3AlwR2nLfxZr2txh3wfHBQr0ELvtjOEj9-Q4by8bNmeel70VNvbxRb9iUSvUuirhE8Rrs1LdlcUbwcCR6u-B43bxwBY6CqymZDUGL54vX9kiu6EfnLEkb1F0QG0Jk4OUpIgXcXyKyxNl7_DBgWalWzwgwLugddEHP1gizsB9xOrpdsVDKvXxUmPLhCX9Uh_cXLv6JIzkg/media?maxWidthPx=800&key=AIzaSyCrMkpaVV1d0GDQZTXjwOs9mzdwRGs2aro",
+        "alt": "Lilit Bakery & Cafe photo 1"
+      },
+      {
+        "src": "https://places.googleapis.com/v1/places/ChIJ12kO7XiWwoAREqtqGVVLBRc/photos/ATCDNfXj6RlJA6ox7IUjKxL3T6tes03ytc8p0FkdEsGg6qeCZvuHAahtoLCkR9Y_Ih8xinKjXaU5W5_cjHHuDGapQgok7x3O5YIaZ1KwDXqb32t7e-VPY0syfbb8BHR8jfnnsG16p3JEAy_FUPLotLP0rM8HdwMJdU8A_kFBAjxovReS-j0YCdXmf-Tb74KR288u8qnnCiy5-Z-0a5Tsy5iD24-9aXUOIlZGqWAL9a2OkCiwiHhGqsqxr40WII_AKcyMZF5B1lI2-omQVxdrlcEh49c__VJIl6uRxLWKgQb3-bq3RPnI9rYd2LZ3Qjfk0MD_93QWj4zd262oJIX3FufdMlohQFR80-RSfc-5DNlFcqvp6lC8tJc1pMWpxnvnxfTg6PywVhdh_o8GLs_qi2dk2sv_WQniqRqCZsS0NyxruK6715tZ/media?maxWidthPx=800&key=AIzaSyCrMkpaVV1d0GDQZTXjwOs9mzdwRGs2aro",
+        "alt": "Lilit Bakery & Cafe photo 2"
+      },
+      {
+        "src": "https://places.googleapis.com/v1/places/ChIJ12kO7XiWwoAREqtqGVVLBRc/photos/ATCDNfW4hABf9VUGh-EeztTIqDPlhkAguD2uyHoxVvzVACE6rxcDdZvaYYwftnM233kuFoL9s3X5jdjL_SPYEkzuvtaqtxh0qhIqCBSDLH8f3ZM9Gpvfas6IMbIxQpAgUGCKIZaeNmkuN5ItJtsST_hRiG6aCCYEnbeqkSO-KdrdRKVU36DZa3PY1kMUWefN76P1V9gcWb5vJtUt-M37GBFW6wNf5Tr6yIFEB3uFMqmHUKUMCITrLBV6KkH1C7aFT4PUPUH5c08Jp85dD3IzDgPeROQaHEZySBObPG7JzkkU9wFul6QIS3AXwqZWfQ6xY2iwuXMYVhTUJvXDOp0wOnzxOxMXsRB832t4XVExgUvGUVNWyY10kNlHOAyFX5YoVonMXRYrj1huFKy96tmB7uEV_Pr5H5tXz-1GDgb16GkRePfJpUub-OO26dmcwuBJX9lI/media?maxWidthPx=800&key=AIzaSyCrMkpaVV1d0GDQZTXjwOs9mzdwRGs2aro",
+        "alt": "Lilit Bakery & Cafe photo 3"
+      },
+      {
+        "src": "https://places.googleapis.com/v1/places/ChIJ12kO7XiWwoAREqtqGVVLBRc/photos/ATCDNfV8ppkkwAZrMD1qBY78orsaEoCo6GzA8WZL6qzN9ZP-f5ehRydZR3vAGXOfXx5JuZOl4aiQjz_V8CotWBy9DRW2uuA87wf-K7Zl24iwQ3yWKrnzPbHuqtb0UivujgxckmJZae5tG1lpt0Fk0h38NDp41y4viNcLVPqMBObb7Z0NJF-MlKfZEaX7y9Ju-yOhy9r7Wc9gQeqDFpaxq2nCLXowg0Zyt4h0LKHEwaJ6i8n66OIsqHO-e1XHziGgbKDvDZ-UX_SLPQBYJCuD7YqoYjzvTMXMK8akGEFh4xZaJaPPhMGIlCoIuPnyzWVhPjHwbEP42eczbVE3jFGz26PYQjarIO6brle9K-gcMlS8UVvcOKbehtlSbJ_PXf_d93q5P0uIzPWXq1WSenFl9NPVsFoK0RpRmL1NgegwwRnMMiOOYJ8eMByOfhAz_lAnEK0K/media?maxWidthPx=800&key=AIzaSyCrMkpaVV1d0GDQZTXjwOs9mzdwRGs2aro",
+        "alt": "Lilit Bakery & Cafe photo 4"
+      },
+      {
+        "src": "https://places.googleapis.com/v1/places/ChIJ12kO7XiWwoAREqtqGVVLBRc/photos/ATCDNfWwR4zGB5OTVCQkO8Nf-I5BU--QDjxQqqjEVxWGyHqT1ph4VB4vXVKxqt8_8S6RLxcnTm9R695lSQUE8QSQxn1LCaf3RQeKj63xlaPTk9os5LAheaYDI-8QvOXozhVP6a1DEJ4wrj90Eo53sOLBDQ_AErsfq_XL5QAzBAkLkAYFbZl7uZ8I66DpQi1nExvKk_A9kJGUbn9EP4ksqujBEPSPGgRpgwBIhRx61FAxkKvWrIRoF0H9A5YfxcpUPxKt4C6G0dkU1NQAQ7WQGivlRTCthC-8mLYiudoxFOwu6rERKLGfxBs18E2UEys9eDMrFE4zS8fPyNQKzi5725Sq7T8J952vZzC0NqWxSlXsvLgtdKXIdXewbPuIPgOxFKLKbtYKCllqORepdLF0HWnVgD1USkcC-vXvBpYkhr8s3-Vxy6LSP4g-lwFGzSPz_vuH/media?maxWidthPx=800&key=AIzaSyCrMkpaVV1d0GDQZTXjwOs9mzdwRGs2aro",
+        "alt": "Lilit Bakery & Cafe photo 5"
+      },
+      {
+        "src": "https://places.googleapis.com/v1/places/ChIJ12kO7XiWwoAREqtqGVVLBRc/photos/ATCDNfUoO6b_Vzhl9lDyqTZ2LKwmjX8961VwpozhztI5ND2ZLq6rkis3SWZnkA5tES6Qb2JGBv8uBI_SHLc6I3DNQYs3Fr8EklrPstutfgKxb-JYHQZ4poCoJN1cvLtKmaRYhTPsIM1_WUEPkjtGBiiv0yZcksLdXQsOFM_cBN92CaDqA_elHISKeer7bDE3i-sd64BaOq2QtIaVmP6yOe-zBzaPMfka3MKq_AhdJp4WyyImWEuW1wHBNGFf-ipuOkqYCyHFoOc6CBLswmXdYuZ4mHIlWSy4XXUTemSwR78c-Z2jdnnZTRCzJ_V-0PEiwxzVWFezb1BRaP7sqyjJ6tHLHUAY8fuSoKLay4-65mkRN2Xiu1lA2J0d0z4pkG0C-A-QcxXRy8pZmNBFYYC_yYLNINzgM9mXA9d6VpcWsB971tI/media?maxWidthPx=800&key=AIzaSyCrMkpaVV1d0GDQZTXjwOs9mzdwRGs2aro",
+        "alt": "Lilit Bakery & Cafe photo 6"
+      }
+    ]
   }
 }
