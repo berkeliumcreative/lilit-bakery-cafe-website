@@ -7,20 +7,17 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { ServiceGrid } from "@/components/ui/service-grid";
 import { GalleryStrip } from "@/components/ui/gallery-strip";
-import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+import { TestimonialGrid } from "@/components/ui/testimonial-grid";
 import { HoursTable } from "@/components/ui/hours-table";
 import { MapEmbed } from "@/components/ui/map-embed";
 import { CTABanner } from "@/components/ui/cta-banner";
 import { StatsSection } from "@/components/ui/stats-section";
-import { ContactSection } from "@/components/ui/contact-section";
-import { FooterColumns } from "@/components/ui/footer-columns";
+import { FooterMinimal } from "@/components/ui/footer-minimal";
 import { AccentLine } from "@/components/ui/accent-line";
-import { Wheat, Cake, PartyPopper, Coffee, UtensilsCrossed } from "lucide-react";
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      {/* 1. Hero */}
       <HeroCentered
         heading={content.hero.heading}
         subheading={content.hero.subheading}
@@ -28,7 +25,6 @@ export default function Page() {
         ctaLink={content.hero.ctaLink}
       />
 
-      {/* 2. Stats Bar */}
       <StatsSection
         stats={[
           { label: "Google Rating", value: 4.5 },
@@ -40,7 +36,6 @@ export default function Page() {
 
       <AccentLine />
 
-      {/* 3. About */}
       <section className="max-w-4xl mx-auto px-6 py-20 md:py-28">
         <BlurFade delay={0.1}>
           <SectionHeading title={content.about.heading} />
@@ -52,14 +47,12 @@ export default function Page() {
         </BlurFade>
       </section>
 
-      {/* 4. What We Offer */}
       <section id="bakery" className="max-w-6xl mx-auto px-6 py-20 md:py-28">
         <SectionHeading title="What We Offer" subtitle="From our ovens to your table" />
-        <ServiceGrid services={content.services} />
+        <ServiceGrid services={content.services.map((s: any) => ({ title: s.title, description: s.description }))} columns={3} />
       </section>
 
-      {/* 5. Gallery */}
-      <GalleryStrip images={content.gallery?.images || [
+      <GalleryStrip images={[
         "/images/photo-1.jpg",
         "/images/photo-2.jpg",
         "/images/photo-3.jpg",
@@ -67,35 +60,33 @@ export default function Page() {
         "/images/photo-5.jpg",
       ]} />
 
-      {/* 6. Testimonials */}
-      <section className="py-20 md:py-28">
+      <section className="py-20 md:py-28 max-w-6xl mx-auto px-6">
         <SectionHeading title="What Our Customers Say" />
-        <div className="max-w-4xl mx-auto px-6">
-          <AnimatedTestimonials testimonials={content.reviews?.map((r: any) => ({
+        <TestimonialGrid
+          testimonials={content.reviews?.map((r: any) => ({
             quote: r.text,
-            name: r.name,
-            designation: "Verified Customer",
-            src: "/images/avatar-placeholder.jpg",
-          })) || []} />
-        </div>
+            author: r.name,
+            role: "Verified Customer",
+            rating: r.rating,
+          })) || []}
+          columns={2}
+        />
       </section>
 
-      {/* 7. CTA */}
       <CTABanner
         heading="Order a Custom Cake"
         subheading="From birthdays to weddings — let us create something unforgettable for your celebration."
         ctaText="Call to Order"
-        ctaLink={`tel:${content.contact.phone}`}
+        ctaLink={"tel:" + content.contact.phone}
       />
 
-      {/* 8. Hours & Contact */}
       <section className="max-w-5xl mx-auto px-6 py-20 md:py-28 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         <div>
           <SectionHeading title="Hours & Location" />
           <HoursTable hours={content.contact.hours} />
           <p className="text-muted-foreground mt-6">{content.contact.address}</p>
           <p className="text-muted-foreground mt-1">
-            <a href={`tel:${content.contact.phone}`} style={{ color: "var(--theme-accent)" }}>
+            <a href={"tel:" + content.contact.phone} style={{ color: "var(--theme-accent)" }}>
               {content.contact.phone}
             </a>
           </p>
@@ -103,13 +94,7 @@ export default function Page() {
         <MapEmbed query={content.contact.mapEmbedQuery} />
       </section>
 
-      {/* 9. Footer */}
-      <FooterColumns
-        businessName={content.businessName}
-        address={content.contact.address}
-        phone={content.contact.phone}
-        email={content.contact.email}
-      />
+      <FooterMinimal businessName={content.businessName} />
     </main>
   );
 }
