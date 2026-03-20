@@ -1,47 +1,99 @@
 {
-  "businessName": "Sample Business",
-  "tagline": "Quality Service You Can Trust",
+  "businessName": "Lilit Bakery & Cafe",
+  "tagline": "Fresh-Baked Goodness in the Heart of North Hollywood",
   "hero": {
-    "heading": "Welcome to Our Business",
-    "subheading": "Professional service in your area.",
-    "ctaText": "Contact Us",
-    "ctaLink": "#contact"
+    "heading": "Baked Fresh, Served with Love",
+    "subheading": "Artisan breads, European pastries, and specialty coffee — all made from scratch daily at our North Hollywood bakery.",
+    "ctaText": "See What's Fresh",
+    "ctaLink": "#bakery",
+    "backgroundImage": "/images/hero-bg.jpg"
   },
   "about": {
-    "heading": "About Us",
+    "heading": "Our Story",
     "paragraphs": [
-      "We are a local business dedicated to providing quality service.",
-      "Our team has years of experience and we take pride in our work."
+      "Lilit Bakery & Cafe has been a beloved neighborhood staple in North Hollywood, bringing the rich traditions of Armenian and European baking to Victory Blvd. Every morning, our ovens fire up before dawn to produce fresh breads, flaky pastries, and indulgent cakes that keep our regulars coming back.",
+      "With over 1,400 five-star reviews, we've earned our reputation for quality. Whether you're grabbing a quick espresso and croissant or ordering a custom cake for a special occasion, our team pours passion into everything we create."
     ]
   },
   "services": [
-    { "title": "Service One", "description": "Professional service with attention to detail.", "icon": "star" },
-    { "title": "Service Two", "description": "Quality work at competitive prices.", "icon": "award" },
-    { "title": "Service Three", "description": "Fast, reliable, and thorough.", "icon": "check" }
+    {
+      "title": "Artisan Breads",
+      "description": "Crusty sourdoughs, soft lavash, golden baguettes, and hearty multigrain loaves — all baked fresh daily using time-honored recipes and premium ingredients.",
+      "icon": "Wheat"
+    },
+    {
+      "title": "European Pastries",
+      "description": "Buttery croissants, fruit danishes, napoleons, eclairs, and traditional Armenian sweet breads. Each pastry is handcrafted with layers of care and flavor.",
+      "icon": "Cake"
+    },
+    {
+      "title": "Custom Cakes & Desserts",
+      "description": "Celebration cakes, tiered wedding cakes, and seasonal desserts made to order. Tell us your vision — we'll make it delicious and beautiful.",
+      "icon": "PartyPopper"
+    },
+    {
+      "title": "Cafe & Breakfast",
+      "description": "Specialty lattes, Armenian coffee, fresh juices, and savory breakfast plates. The perfect way to start your day before the bakery's warm pastries run out.",
+      "icon": "Coffee"
+    },
+    {
+      "title": "Catering & Platters",
+      "description": "Pastry platters, sandwich trays, and dessert spreads for events of any size. From office breakfasts to family gatherings, we make hosting easy and delicious.",
+      "icon": "UtensilsCrossed"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Armen T.",
+      "text": "The best bakery in the Valley — hands down. Their lavash is incredible and the cakes are works of art. We order from here for every family event.",
+      "rating": 5
+    },
+    {
+      "name": "Jessica M.",
+      "text": "I stop here every morning on my way to work. The croissants are flaky perfection and the coffee is strong and smooth. My happy place!",
+      "rating": 5
+    },
+    {
+      "name": "Robert K.",
+      "text": "Ordered a birthday cake and it exceeded every expectation. Beautiful, moist, and not too sweet. The whole family was impressed. Will definitely be back.",
+      "rating": 5
+    },
+    {
+      "name": "Nina S.",
+      "text": "Love this place so much! Everything tastes homemade and fresh. The napoleon pastry is the best I've had outside of Yerevan. Truly authentic.",
+      "rating": 5
+    }
   ],
   "contact": {
-    "address": "123 Main St, City, ST 12345",
-    "phone": "(555) 123-4567",
-    "email": "info@sample.com",
+    "address": "12001 Victory Blvd, North Hollywood, CA 91606",
+    "phone": "(818) 821-8333",
+    "email": "info@lilitbakery.com",
     "hours": {
-      "Monday": "9:00 AM - 5:00 PM",
-      "Tuesday": "9:00 AM - 5:00 PM",
-      "Wednesday": "9:00 AM - 5:00 PM",
-      "Thursday": "9:00 AM - 5:00 PM",
-      "Friday": "9:00 AM - 5:00 PM",
-      "Saturday": "10:00 AM - 3:00 PM",
-      "Sunday": "Closed"
+      "Monday": "8:00 AM – 7:00 PM",
+      "Tuesday": "8:00 AM – 7:00 PM",
+      "Wednesday": "8:00 AM – 7:00 PM",
+      "Thursday": "8:00 AM – 7:00 PM",
+      "Friday": "8:00 AM – 8:00 PM",
+      "Saturday": "8:00 AM – 8:00 PM",
+      "Sunday": "8:00 AM – 6:00 PM"
     },
-    "mapEmbedQuery": "123+Main+St+City+ST"
+    "mapEmbedQuery": "Lilit Bakery & Cafe, 12001 Victory Blvd, North Hollywood, CA 91606"
   },
   "seo": {
-    "title": "Sample Business | City, ST",
-    "description": "Sample Business in City, ST. Professional services you can trust.",
-    "keywords": ["sample business", "city ST", "professional services"]
+    "title": "Lilit Bakery & Cafe | Fresh Breads & Pastries in North Hollywood",
+    "description": "Artisan breads, European pastries, custom cakes, and specialty coffee. Visit Lilit Bakery & Cafe on Victory Blvd in North Hollywood, CA.",
+    "keywords": [
+      "bakery north hollywood",
+      "armenian bakery la",
+      "lilit bakery",
+      "custom cakes north hollywood",
+      "pastries near me",
+      "best bakery los angeles"
+    ]
   },
   "theme": {
-    "primaryColor": "#0a0a0a",
-    "accentColor": "#c8a97e",
-    "fontFamily": "modern"
+    "primaryColor": "#fef3c7",
+    "accentColor": "#92400e",
+    "fontFamily": "elegant"
   }
 }
