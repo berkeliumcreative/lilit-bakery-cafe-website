@@ -2,11 +2,10 @@
 "use client";
 
 import content from "../data/content.json";
-import { HeroCentered } from "@/components/ui/hero-centered";
+import { HeroImageBg } from "@/components/ui/hero-image-bg";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { ServiceGrid } from "@/components/ui/service-grid";
-import { GalleryStrip } from "@/components/ui/gallery-strip";
 import { TestimonialGrid } from "@/components/ui/testimonial-grid";
 import { HoursTable } from "@/components/ui/hours-table";
 import { MapEmbed } from "@/components/ui/map-embed";
@@ -18,12 +17,7 @@ import { AccentLine } from "@/components/ui/accent-line";
 export default function Page() {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <HeroCentered
-        heading={content.hero.heading}
-        subheading={content.hero.subheading}
-        ctaText={content.hero.ctaText}
-        ctaLink={content.hero.ctaLink}
-      />
+      <HeroImageBg heading={content.hero.heading} subheading={content.hero.subheading} ctaText={content.hero.ctaText} ctaLink={content.hero.ctaLink} backgroundImage={content.hero.backgroundImage} />
 
       <StatsSection
         stats={[
@@ -52,13 +46,7 @@ export default function Page() {
         <ServiceGrid services={content.services.map((s: any) => ({ title: s.title, description: s.description }))} columns={3} />
       </section>
 
-      <GalleryStrip images={[
-        "/images/photo-1.jpg",
-        "/images/photo-2.jpg",
-        "/images/photo-3.jpg",
-        "/images/photo-4.jpg",
-        "/images/photo-5.jpg",
-      ]} />
+      {content.gallery && (<section className="py-16"><SectionHeading title={content.gallery.heading} /><div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-6 mt-8">{content.gallery.images.map((img: any, i: number) => (<BlurFade key={i} delay={0.1 * i}><img src={img.src} alt={img.alt} className="w-full h-64 object-cover rounded-lg" /></BlurFade>))}</div></section>)}
 
       <section className="py-20 md:py-28 max-w-6xl mx-auto px-6">
         <SectionHeading title="What Our Customers Say" />
