@@ -2,6 +2,7 @@
 "use client";
 
 import content from "../data/content.json";
+import { MinimalNav } from "@/components/ui/minimal-nav";
 import { HeroImageBg } from "@/components/ui/hero-image-bg";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { BlurFade } from "@/components/ui/blur-fade";
@@ -12,11 +13,24 @@ import { MapEmbed } from "@/components/ui/map-embed";
 import { CTABanner } from "@/components/ui/cta-banner";
 import { StatsSection } from "@/components/ui/stats-section";
 import { FooterMinimal } from "@/components/ui/footer-minimal";
-import { AccentLine } from "@/components/ui/accent-line";
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-background text-foreground">
+      <MinimalNav
+        logo={<span><span style={{ color: "var(--theme-accent)" }}>Lilit</span> Bakery &amp; Cafe</span>}
+        items={[
+          { label: "About", href: "#about" },
+          { label: "Bakery", href: "#bakery" },
+          { label: "Gallery", href: "#gallery" },
+          { label: "Reviews", href: "#reviews" },
+          { label: "Hours", href: "#hours" },
+          { label: "Contact", href: "#contact" },
+        ]}
+        ctaText="📞 Call Now"
+        ctaHref={"tel:" + content.contact.phone}
+      />
+
       <HeroImageBg heading={content.hero.heading} subheading={content.hero.subheading} ctaText={content.hero.ctaText} ctaHref={content.hero.ctaLink} imageSrc={content.hero.backgroundImage} />
 
       <StatsSection
@@ -28,9 +42,7 @@ export default function Page() {
         ]}
       />
 
-      <AccentLine />
-
-      <section className="max-w-4xl mx-auto px-6 py-20 md:py-28">
+      <section id="about" className="max-w-4xl mx-auto px-6 py-20 md:py-28">
         <BlurFade delay={0.1}>
           <SectionHeading title={content.about.heading} />
           {content.about.paragraphs.map((p: string, i: number) => (
@@ -46,9 +58,20 @@ export default function Page() {
         <ServiceGrid services={content.services.map((s: any) => ({ title: s.title, description: s.description }))} columns={3} />
       </section>
 
-      {content.gallery && (<section className="py-16"><SectionHeading title={content.gallery.heading} /><div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-6 mt-8">{content.gallery.images.map((img: any, i: number) => (<BlurFade key={i} delay={0.1 * i}><img src={img.src} alt={img.alt} className="w-full h-64 object-cover rounded-lg" /></BlurFade>))}</div></section>)}
+      {content.gallery && (
+        <section id="gallery" className="py-16">
+          <SectionHeading title={content.gallery.heading} />
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-6 mt-8">
+            {content.gallery.images.map((img: any, i: number) => (
+              <BlurFade key={i} delay={0.1 * i}>
+                <img src={img.src} alt={img.alt} className="w-full h-64 object-cover rounded-lg" />
+              </BlurFade>
+            ))}
+          </div>
+        </section>
+      )}
 
-      <section className="py-20 md:py-28 max-w-6xl mx-auto px-6">
+      <section id="reviews" className="py-20 md:py-28 max-w-6xl mx-auto px-6">
         <SectionHeading title="What Our Customers Say" />
         <TestimonialGrid
           testimonials={content.reviews?.map((r: any) => ({
@@ -68,8 +91,8 @@ export default function Page() {
         ctaLink={"tel:" + content.contact.phone}
       />
 
-      <section className="max-w-5xl mx-auto px-6 py-20 md:py-28 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        <div>
+      <section id="hours" className="max-w-5xl mx-auto px-6 py-20 md:py-28 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div id="contact">
           <SectionHeading title="Hours & Location" />
           <HoursTable hours={content.contact.hours} />
           <p className="text-muted-foreground mt-6">{content.contact.address}</p>
